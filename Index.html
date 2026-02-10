@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>KHOLOS IPHONE’S | 40% OFF SALE</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+  <h1>KHOLOS IPHONE’S</h1>
+  <p>🔥 40% OFF • Limited Sale • South Africa 🇿🇦</p>
+</header>
+
+<section class="products">
+
+  <div class="product">
+    <img src="images/iphone11.png" alt="iPhone 11">
+    <h2>iPhone 11 (64GB)</h2>
+    <p class="old">R10,999</p>
+    <p class="price">R6,599</p>
+    <span class="sale">40% OFF</span>
+    <button onclick="addToCart('iPhone 11', 6599)">Add to Cart</button>
+  </div>
+
+  <div class="product">
+    <img src="images/iphone12.png" alt="iPhone 12">
+    <h2>iPhone 12 (128GB)</h2>
+    <p class="old">R14,999</p>
+    <p class="price">R8,999</p>
+    <span class="sale">40% OFF</span>
+    <button onclick="addToCart('iPhone 12', 8999)">Add to Cart</button>
+  </div>
+
+  <div class="product">
+    <img src="images/iphone13.png" alt="iPhone 13">
+    <h2>iPhone 13 (128GB)</h2>
+    <p class="old">R17,999</p>
+    <p class="price">R10,799</p>
+    <span class="sale">40% OFF</span>
+    <button onclick="addToCart('iPhone 13', 10799)">Add to Cart</button>
+  </div>
+
+</section>
+
+<section class="cart">
+  <h2>🛒 Cart</h2>
+  <ul id="cartItems"></ul>
+  <h3>Total: R<span id="total">0</span></h3>
+
+  <form onsubmit="placeOrder(); return false;">
+    <input type="text" placeholder="Full Name" required>
+    <input type="email" placeholder="Email Address" required>
+    <input type="text" placeholder="Delivery Address" required>
+    <button type="submit">Place Order</button>
+  </form>
+
+  <p class="delivery">📦 Delivery in <strong>7–11 working days</strong></p>
+</section>
+
+<script src="script.js"></script>
+</body>
+</html>
